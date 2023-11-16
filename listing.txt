@@ -9,4 +9,3 @@ rider
 rubymine
 rustrover
 webstorm
-writerside
