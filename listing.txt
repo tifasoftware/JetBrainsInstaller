@@ -1,0 +1,12 @@
+clion
+datagrip
+dataspell
+goland
+idea
+phpstorm
+pycharm
+rider
+rubymine
+rustrover
+webstorm
+writerside
