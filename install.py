@@ -130,12 +130,12 @@ elif args[1] == "-e":
         args = args + [""]
     if len(args) == 5:
         if verifyProduct(args[3]):
-            installLinuxArchive(args[3], args[2], args[4] == "-c")
+            installLinuxArchive(args[3], args[2].lower(), args[4] == "-c")
     else:
         print("Invalid Arguments")
 else:
     if len(args) == 2:
         args = args + [""]
-    if verifyProduct(args[1]):
-        installProduct(args[1], args[2] == "-c")
+    if verifyProduct(args[1].lower()):
+        installProduct(args[1].lower(), args[2] == "-c")
 
