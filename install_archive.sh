@@ -43,10 +43,7 @@ rm -r tmp
 
 cd $commonName/bin || exit 1
 
-if [ $3 == "1" ]; then
-  cp $2.svg $commonName.svg
-fi
-cp -u $commonName.svg /usr/share/pixmaps/
+cp -u *.svg /usr/share/pixmaps/
 cp -u $jbiDir/$commonName.desktop /usr/share/applications/
 
 if [ $ceE == "1" ]; then

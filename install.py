@@ -43,20 +43,16 @@ def verifyProduct(productName):
         print("Product does not exist")
         return False
 
-def getProductDownloadLink(productName, isCE = False):
+def getProductDownloadLink(productName):
     if (verifyProduct(productName)):
         url = productListing[productName]
-        if isCE:
-            url = productListing[productName + "-ce"]
         return url
     else:
         return "about:blank"
 
 
-def installLinuxArchive(productName, archivepath, isCE = False):
+def installLinuxArchive(productName, archivepath):
     ceNum = 0
-    if isCE:
-        ceNum = 1
 
     return subprocess.run(["sudo", "/usr/bin/env", "bash", "install_archive.sh", archivepath, productName, str(ceNum)]).returncode
 
@@ -70,19 +66,19 @@ def getProductList(arguments):
     if (safeSearch(arguments, "@all") != -1):
         productList = supportedProducts
     else:
-        for x in range(1, len(arguments) - 1):
+        for x in range(1, len(arguments)):
             productList = productList + [arguments[x].lower()]
     #print(productList)
     return productList
 
-def installProduct(productName, isCE):
-    url = (getProductDownloadLink(productName, isCE))
+def installProduct(productName):
+    url = (getProductDownloadLink(productName))
     print("URL: " + url + "")
     tarF = "./"+productName+".tar.gz"
     if url != "about:blank":
         if urlretrieve(url, tarF):
             print("Installing " + productName)
-            if installLinuxArchive(productName, tarF, isCE) == 0:
+            if installLinuxArchive(productName, tarF) == 0:
                 os.remove(tarF)
         else:
             print("Download Failed!")
@@ -100,13 +96,8 @@ def interactive():
         test = input("Enter JetBrains Product Name: ")
         if test == "quit":
             break
-
         if (test != "ls") and (verifyProduct(test)):
-            rce = input("Select Edition: [P] for professional, or [C] for community (Default = P): ")
-            ce = False
-            if rce.lower() == "c":
-                ce = True
-            installProduct(test, ce)
+            installProduct(test)
         elif test == "ls":
             printListing()
 
@@ -136,13 +127,12 @@ elif args[1] == "-e":
         args = args + [""]
     if len(args) == 5:
         if verifyProduct(args[3]):
-            installLinuxArchive(args[3], args[2].lower(), args[4] == "-c")
+            installLinuxArchive(args[3], args[2].lower())
     else:
         print("Invalid Arguments")
 else:
-    if args[-1] != "-c":
-        args = args + [""]
     for product in getProductList(args):
         if verifyProduct(product):
-            installProduct(product, args[-1] == "-c")
+            #print(product)
+            installProduct(product)
 
