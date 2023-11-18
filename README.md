@@ -3,7 +3,7 @@
 Please ensure you have the following
 - Bash
 - Python
-- A web browser that can access JetBrains' website
+- WGet
 - Tar Utilities
 ## Downloading
 Clone the repository here:
