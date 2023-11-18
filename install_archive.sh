@@ -28,7 +28,7 @@ rm -r tmp
 
 cd $commonName/bin || exit 1
 
-cp -u *.svg /usr/share/pixmaps/
+cp -u *.svg /usr/share/pixmaps/$2.svg
 cp -u $jbiDir/$commonName.desktop /usr/share/applications/
 
 echo "Software Installed"
