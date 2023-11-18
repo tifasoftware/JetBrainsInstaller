@@ -63,14 +63,18 @@ def urlretrieve(url, filename):
 
 def getProductList(arguments):
     productList = []
-    if (safeSearch(arguments, "@all") != -1):
+    if safeSearch(arguments, "@all") != -1:
         productList = supportedProducts
-    elif (safeSearch(arguments, "@pro") != -1):
+    if safeSearch(arguments, "@pro") != -1:
         for product in supportedProducts:
-            if not product.endswith("-ce"):
+            if (not product.endswith("-ce")) and (safeSearch(productList, product) == -1):
                 productList = productList + [product]
-    else:
-        for x in range(1, len(arguments)):
+    if safeSearch(arguments, "@ce") != -1:
+        for product in supportedProducts:
+            if (product.endswith("-ce")) and (safeSearch(productList, product) == -1):
+                productList = productList + [product]
+    for x in range(1, len(arguments)):
+        if (safeSearch(productList, arguments[x].lower()) == -1) and (not arguments[x].lower().startswith("@")):
             productList = productList + [arguments[x].lower()]
     #print(productList)
     return productList
