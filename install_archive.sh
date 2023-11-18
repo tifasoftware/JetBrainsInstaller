@@ -10,12 +10,13 @@ fi
 
 export jbiDir="$(pwd)"
 mkdir /opt/jetbrains/
-tar xvf $1 -C /opt/jetbrains/
+mkdir /opt/jetbrains/tmp
+tar xvf $1 -C /opt/jetbrains/tmp
 rawarchDir="${1%".tar.gz"}"
 archDir="${rawarchDir%%-*}"
 progDir="$(basename $archDir)"
 # rm $1
-cd /opt/jetbrains/
+cd /opt/jetbrains/tmp
 
 commonName=$2
 if [ $3 == "1" ]; then
@@ -35,17 +36,10 @@ if [ -e "$2-ce" ] && [ $3 == "0" ]; then
 fi
 
 export progDirL=$(echo "$progDir" | sed -e 's/\(.*\)/\L\1/')
-#echo "$progDir"
-#echo "$progDirL"
-#echo "$2"
-#echo "$commonName"
-if [ -e $progDir ]; then
-  mv $progDir-* $commonName
-elif [ -e $progDirL ]; then
-  mv $progDirL-* $commonName
-else
-  mv $2-* $commonName
-fi
+
+mv * ../$commonName
+cd ..
+rm -r tmp
 
 cd $commonName/bin
 
