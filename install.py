@@ -73,8 +73,11 @@ def installLinuxArchive(productName, archivepath, isCE = False):
 
 def getProductList(arguments):
     productList = []
-    for x in range(1, len(arguments) - 1):
-        productList = productList + [arguments[x].lower()]
+    if (safeSearch(arguments, "@all")):
+        productList = supportedProducts
+    else:
+        for x in range(1, len(arguments) - 1):
+            productList = productList + [arguments[x].lower()]
     print(productList)
     return productList
 
