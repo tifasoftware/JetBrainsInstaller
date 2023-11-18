@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import platform
-#from urllib.request import urlretrieve
+import os
 import sys
 import subprocess
 import json
@@ -58,7 +58,7 @@ def installLinuxArchive(productName, archivepath, isCE = False):
     if isCE:
         ceNum = 1
 
-    subprocess.run(["sudo", "/usr/bin/env", "bash", "install_archive.sh", archivepath, productName, str(ceNum)])
+    return subprocess.run(["sudo", "/usr/bin/env", "bash", "install_archive.sh", archivepath, productName, str(ceNum)]).returncode
 
 
 def urlretrieve(url, filename):
@@ -82,7 +82,8 @@ def installProduct(productName, isCE):
     if url != "about:blank":
         if urlretrieve(url, tarF):
             print("Installing " + productName)
-            installLinuxArchive(productName, tarF, isCE)
+            if installLinuxArchive(productName, tarF, isCE) == 0:
+                os.remove(tarF)
         else:
             print("Download Failed!")
 
