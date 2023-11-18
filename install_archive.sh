@@ -41,7 +41,7 @@ mv * ../$commonName
 cd ..
 rm -r tmp
 
-cd $commonName/bin
+cd $commonName/bin || exit 1
 
 if [ $3 == "1" ]; then
   cp $2.svg $commonName.svg
