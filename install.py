@@ -65,6 +65,10 @@ def getProductList(arguments):
     productList = []
     if (safeSearch(arguments, "@all") != -1):
         productList = supportedProducts
+    elif (safeSearch(arguments, "@pro") != -1):
+        for product in supportedProducts:
+            if not product.endswith("-ce"):
+                productList = productList + [product]
     else:
         for x in range(1, len(arguments)):
             productList = productList + [arguments[x].lower()]
