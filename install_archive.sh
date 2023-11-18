@@ -17,7 +17,7 @@ commonName=$2
 
 if [ -d "../$commonName" ]; then
   echo "Removing old version"
-  yes | rm -r $commonName
+  yes | rm -r ../$commonName
 fi
 
 export progDirL=$(echo "$progDir" | sed -e 's/\(.*\)/\L\1/')
