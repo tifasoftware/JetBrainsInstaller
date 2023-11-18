@@ -15,7 +15,7 @@ cd /opt/jetbrains/tmp
 
 commonName=$2
 
-if [ -d "./$commonName" ]; then
+if [ -d "../$commonName" ]; then
   echo "Removing old version"
   yes | rm -r $commonName
 fi
