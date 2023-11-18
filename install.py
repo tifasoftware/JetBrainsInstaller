@@ -144,6 +144,5 @@ else:
         args = args + [""]
     for product in getProductList(args):
         if verifyProduct(product):
-            print(product)
             installProduct(product, args[-1] == "-c")
 
