@@ -70,6 +70,14 @@ def installLinuxArchive(productName, archivepath, isCE = False):
 
     subprocess.run(["sudo", "/usr/bin/env", "bash", "install_archive.sh", archivepath, productName, str(ceNum)])
 
+
+def getProductList(arguments):
+    productList = []
+    for x in range(1, len(arguments) - 1):
+        productList = productList + [arguments[x].lower()]
+    print(productList)
+    return productList
+
 def installProduct(productName, isCE):
     url = (getProductDownloadLink(productName, isCE))
     print("URL: " + url + "")
@@ -120,7 +128,7 @@ if len(args) == 1:
     args = args + ['-h']
 
 if args[1] == "-h":
-    print("Syntax: install.py [-hli] [-e PATH_TO_ARCHIVE] PRODUCT [-c]")
+    print("Syntax: install.py [-hli] [-e PATH_TO_ARCHIVE] PRODUCT(s) [-c]")
 elif args[1] == "-l":
     printListing()
 elif args[1] == "-i":
@@ -134,8 +142,9 @@ elif args[1] == "-e":
     else:
         print("Invalid Arguments")
 else:
-    if len(args) == 2:
+    if args[-1] != "-c":
         args = args + [""]
-    if verifyProduct(args[1].lower()):
-        installProduct(args[1].lower(), args[2] == "-c")
+    for product in getProductList(args):
+        if verifyProduct(product):
+            installProduct(product, args[-1] == "-c")
 
