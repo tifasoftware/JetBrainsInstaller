@@ -16,7 +16,7 @@ Comment=JetBrains IDE for .NET
 Path=/opt/jetbrains/rider/bin
 
 # The executable of the application, possibly with arguments.
-Exec=rider.sh
+Exec=/opt/jetbrains/rider/bin/rider.sh
 
 # The name of the icon that will be used to display this entry
 Icon=rider

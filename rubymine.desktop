@@ -16,7 +16,7 @@ Comment=JetBrains IDE for Ruby
 Path=/opt/jetbrains/rubymine/bin
 
 # The executable of the application, possibly with arguments.
-Exec=rubymine.sh
+Exec=/opt/jetbrains/rubymine/bin/rubymine.sh
 
 # The name of the icon that will be used to display this entry
 Icon=rubymine

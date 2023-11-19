@@ -16,7 +16,7 @@ Comment=JetBrains IDE for Python
 Path=/opt/jetbrains/pycharm-ce/bin
 
 # The executable of the application, possibly with arguments.
-Exec=pycharm.sh
+Exec=/opt/jetbrains/pycharm-ce/bin/pycharm.sh
 
 # The name of the icon that will be used to display this entry
 Icon=pycharm-ce

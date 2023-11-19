@@ -16,7 +16,7 @@ Comment=JetBrains IDE for JavaScript
 Path=/opt/jetbrains/webstorm/bin
 
 # The executable of the application, possibly with arguments.
-Exec=webstorm.sh
+Exec=/opt/jetbrains/webstorm/bin/webstorm.sh
 
 # The name of the icon that will be used to display this entry
 Icon=webstorm

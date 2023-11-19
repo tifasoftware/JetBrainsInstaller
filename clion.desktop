@@ -16,7 +16,7 @@ Comment=JetBrains IDE for C/C++
 Path=/opt/jetbrains/clion/bin
 
 # The executable of the application, possibly with arguments.
-Exec=clion.sh
+Exec=/opt/jetbrains/clion/bin/clion.sh
 
 # The name of the icon that will be used to display this entry
 Icon=clion
@@ -26,3 +26,4 @@ Terminal=false
 
 # Describes the categories in which this entry should be shown
 Categories=Development
+StartupWMClass=jetbrains-clion

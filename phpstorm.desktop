@@ -16,7 +16,7 @@ Comment=JetBrains IDE for PHP
 Path=/opt/jetbrains/phpstorm/bin
 
 # The executable of the application, possibly with arguments.
-Exec=phpstorm.sh
+Exec=/opt/jetbrains/phpstorm/bin/phpstorm.sh
 
 # The name of the icon that will be used to display this entry
 Icon=phpstorm
