@@ -1,15 +1,15 @@
 {
-  "clion": "https://download.jetbrains.com/cpp/CLion-2023.3.4.tar.gz",
-  "datagrip": "https://download.jetbrains.com/datagrip/datagrip-2023.3.4.tar.gz",
-  "dataspell": "https://download.jetbrains.com/python/dataspell-2023.3.4.tar.gz",
-  "goland": "https://download.jetbrains.com/go/goland-2023.3.4.tar.gz",
-  "idea": "https://download.jetbrains.com/idea/ideaIU-2023.3.4.tar.gz",
-  "idea-ce": "https://download.jetbrains.com/idea/ideaIC-2023.3.4.tar.gz",
-  "phpstorm": "https://download.jetbrains.com/webide/PhpStorm-2023.3.4.tar.gz",
-  "pycharm": "https://download.jetbrains.com/python/pycharm-professional-2023.3.3.tar.gz",
-  "pycharm-ce": "https://download.jetbrains.com/python/pycharm-community-2023.3.3.tar.gz",
-  "rider": "https://download.jetbrains.com/rider/JetBrains.Rider-2023.2.2.tar.gz",
-  "rubymine": "https://download.jetbrains.com/ruby/RubyMine-2023.3.4.tar.gz",
-  "rustrover": "https://download.jetbrains.com/rustrover/RustRover-233.14015.147.tar.gz",
-  "webstorm": "https://download.jetbrains.com/webstorm/WebStorm-2023.3.4.tar.gz"
+  "clion": "https://download.jetbrains.com/cpp/CLion-2024.1.tar.gz",
+  "datagrip": "https://download.jetbrains.com/datagrip/datagrip-2024.1.tar.gz",
+  "dataspell": "https://download.jetbrains.com/python/dataspell-2024.1.tar.gz",
+  "goland": "https://download.jetbrains.com/go/goland-2024.1.tar.gz",
+  "idea": "https://download.jetbrains.com/idea/ideaIU-2024.1.tar.gz",
+  "idea-ce": "https://download.jetbrains.com/idea/ideaIC-2024.1.tar.gz",
+  "phpstorm": "https://download.jetbrains.com/webide/PhpStorm-2024.1.tar.gz",
+  "pycharm": "https://download.jetbrains.com/python/pycharm-professional-2024.1.tar.gz",
+  "pycharm-ce": "https://download.jetbrains.com/python/pycharm-community-2024.1.tar.gz",
+  "rider": "https://download.jetbrains.com/rider/JetBrains.Rider-2024.1.tar.gz",
+  "rubymine": "https://download.jetbrains.com/ruby/RubyMine-2024.1.tar.gz",
+  "rustrover": "https://download.jetbrains.com/rustrover/RustRover-233.15026.24.tar.gz",
+  "webstorm": "https://download.jetbrains.com/webstorm/WebStorm-2024.1.tar.gz"
 }
