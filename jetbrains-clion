@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/clion/bin
+/opt/jetbrains/clion/bin/clion.sh 

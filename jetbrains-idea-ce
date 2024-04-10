@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/idea-ce/bin
+/opt/jetbrains/idea-ce/bin/idea.sh 

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/rider/bin
+/opt/jetbrains/rider/bin/rider.sh 

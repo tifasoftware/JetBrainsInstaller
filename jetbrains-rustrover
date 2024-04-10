@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/rustrover/bin
+/opt/jetbrains/rustrover/bin/rustrover.sh 

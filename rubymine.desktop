@@ -13,10 +13,10 @@ Name=JetBrains RubyMine
 Comment=JetBrains IDE for Ruby
 
 # The path to the folder in which the executable is run
-Path=/opt/jetbrains/rubymine/bin
+Path=/usr/local/bin
 
 # The executable of the application, possibly with arguments.
-Exec=/opt/jetbrains/rubymine/bin/rubymine.sh
+Exec=/usr/local/bin/jetbrains-rubymine
 
 # The name of the icon that will be used to display this entry
 Icon=rubymine

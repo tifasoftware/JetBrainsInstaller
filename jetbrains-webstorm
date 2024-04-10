@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/webstorm/bin
+/opt/jetbrains/webstorm/bin/webstorm.sh 

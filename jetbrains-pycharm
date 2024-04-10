@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/pycharm/bin
+/opt/jetbrains/pycharm/bin/pycharm.sh 

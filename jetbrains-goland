@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/goland/bin
+/opt/jetbrains/goland/bin/goland.sh 

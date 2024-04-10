@@ -13,10 +13,10 @@ Name=JetBrains CLion
 Comment=JetBrains IDE for C/C++
 
 # The path to the folder in which the executable is run
-Path=/opt/jetbrains/clion/bin
+Path=/usr/local/bin
 
 # The executable of the application, possibly with arguments.
-Exec=/opt/jetbrains/clion/bin/clion.sh
+Exec=/usr/local/bin/jetbrains-clion
 
 # The name of the icon that will be used to display this entry
 Icon=clion

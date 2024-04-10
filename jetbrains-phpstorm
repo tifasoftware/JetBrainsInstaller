@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/phpstorm/bin
+/opt/jetbrains/phpstorm/bin/phpstorm.sh 

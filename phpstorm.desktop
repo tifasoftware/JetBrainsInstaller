@@ -13,10 +13,10 @@ Name=JetBrains PhpStorm
 Comment=JetBrains IDE for PHP
 
 # The path to the folder in which the executable is run
-Path=/opt/jetbrains/phpstorm/bin
+Path=/usr/local/bin
 
 # The executable of the application, possibly with arguments.
-Exec=/opt/jetbrains/phpstorm/bin/phpstorm.sh
+Exec=/usr/local/bin/jetbrains-phpstorm
 
 # The name of the icon that will be used to display this entry
 Icon=phpstorm

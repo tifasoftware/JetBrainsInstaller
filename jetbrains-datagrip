@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/jetbrains/datagrip/bin
+/opt/jetbrains/datagrip/bin/datagrip.sh 
