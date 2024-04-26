@@ -16,7 +16,7 @@ Comment=JetBrains IDE for Rust
 Path=/usr/local/bin
 
 # The executable of the application, possibly with arguments.
-Exec=/usr/local/bin/jetbrains-rustover
+Exec=/usr/local/bin/jetbrains-rustrover
 
 # The name of the icon that will be used to display this entry
 Icon=rustrover
