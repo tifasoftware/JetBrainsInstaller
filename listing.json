@@ -1,7 +1,7 @@
 {
   "clion": "https://download.jetbrains.com/cpp/CLion-2024.1.4.tar.gz",
   "datagrip": "https://download.jetbrains.com/datagrip/datagrip-2024.1.4.tar.gz",
-  "dataspell": "https://download.jetbrains.com/python/dataspell-2024.1.4.tar.gz",
+  "dataspell": "https://download.jetbrains.com/python/dataspell-2024.1.3.tar.gz",
   "goland": "https://download.jetbrains.com/go/goland-2024.1.4.tar.gz",
   "idea": "https://download.jetbrains.com/idea/ideaIU-2024.1.4.tar.gz",
   "idea-ce": "https://download.jetbrains.com/idea/ideaIC-2024.1.4.tar.gz",
